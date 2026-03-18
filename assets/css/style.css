@@ -1,0 +1,53 @@
+/* Light Theme */
+body.dark_theme {
+    background-color: #111;
+    color: #fff;
+}
+
+body.dark_theme .header-menu ul li a {
+    color: #ffffff;
+}
+
+
+body.light_theme {
+    background-color: #ffffff;
+    color: #000;
+}
+
+body.light_theme .header-menu ul li a {
+    color: #d1a14b;
+}
+
+.zoom-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    animation: zoomPulse 1.5s infinite;
+}
+
+@keyframes zoomPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+@font-face {
+    font-family: 'AlgerFont';
+    src: url('../font/ALGER.TTF') format('truetype');
+}
+
+* {
+    font-family: 'AlgerFont', sans-serif !important;
+}

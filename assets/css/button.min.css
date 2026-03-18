@@ -1,0 +1,228 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: var(--bold);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border: none;
+    height: 56px;
+    color: var(--white-scale-900)
+}
+
+.btn-blue,
+.btn-green,
+.btn-orange,
+.btn-pink,
+.btn-purple {
+    color: var(--fix-color-white)
+}
+
+.btn i {
+    font-size: 20px
+}
+
+.icon-btn {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    justify-content: center;
+    flex: 0 0 56px
+}
+
+.icon-btn i {
+    font-size: 28px
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 14px
+}
+
+.btn-md {
+    padding: 10px 20px;
+    font-size: 16px
+}
+
+.btn-lg {
+    padding: 14px 28px;
+    font-size: 18px
+}
+
+.btn-orange {
+    background: var(--primary-colors-orange)
+}
+
+.btn-purple {
+    background: var(--primary-colors-purple)
+}
+
+.btn-pink {
+    background: var(--primary-colors-pink)
+}
+
+.btn-green {
+    background: var(--primary-colors-green)
+}
+
+.btn-blue {
+    background: var(--primary-colors-blue)
+}
+
+.btn-blur {
+    background: linear-gradient(180deg, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, .04) 100%);
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px)
+}
+
+.btn-outline-orange {
+    background: 0 0 !important;
+    border: 2px solid var(--primary-colors-orange) !important;
+    color: var(--primary-colors-orange) !important
+}
+
+.btn-outline-purple {
+    background: 0 0 !important;
+    border: 2px solid var(--primary-colors-purple) !important;
+    color: var(--primary-colors-purple) !important
+}
+
+.btn-outline-green,
+.btn-outline-pink {
+    background: 0 0 !important;
+    border: 2px solid var(--primary-colors-pink) !important;
+    color: var(--primary-colors-pink) !important
+}
+
+.btn-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    pointer-events: none
+}
+
+.btn-rounded {
+    border-radius: 10px
+}
+
+.btn-pill {
+    border-radius: 50px;
+    padding: 10px 30px
+}
+
+.btn-square {
+    border-radius: 0
+}
+
+.btn-shadow {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2)
+}
+
+.btn-glow {
+    box-shadow: 0 0 10px rgba(0, 123, 255, .7)
+}
+
+.btn-animated {
+    animation: 1.5s infinite pulse
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+}
+
+.button-effect1 {
+    border-radius: 15px;
+    appearance: none;
+    position: relative;
+    padding: 16px 28px;
+    border: 0;
+    background-color: var(--opacity-shade-white-white-200);
+    font-size: 16px;
+    color: var(--white-scale-900);
+    z-index: 2
+}
+
+.button-effect1:after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border-radius: 15px;
+    background-image: conic-gradient(#488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655adc, #488cfb);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-clip: var(--m-o);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    -webkit-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+    animation: .5s linear infinite rotate-hue
+}
+
+.button-effect1:hover::after {
+    animation-play-state: paused
+}
+
+@keyframes rotate-hue {
+    to {
+        -webkit-filter: hue-rotate(1turn);
+        filter: hue-rotate(1turn)
+    }
+}
+
+.button-effect1,
+.button-effect1::after {
+    box-sizing: border-box
+}
+
+.button-effect1:active {
+    border-width: 5px
+}
+
+.button-effect1 svg path {
+    fill: var(--white-scale-900)
+}
+
+@media (max-width: 2000px) {
+    .button-effect1 {
+        padding: 12px 25px
+    }
+}
+
+@media (max-width: 1400px) {
+    .btn {
+        height: 50px;
+        padding: 10px 20px
+    }
+
+    .icon-btn {
+        width: 50px;
+        height: 50px;
+        flex: 0 0 50px
+    }
+
+    .button-effect1 {
+        padding: 15px 28px
+    }
+}

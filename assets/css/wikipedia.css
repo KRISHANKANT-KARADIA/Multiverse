@@ -1,0 +1,177 @@
+.day-night-switch {
+    display: block !important
+}
+
+.inner-top-title-section {
+    background: url(../images/blockchain-development-company/title-bg.webp) center center no-repeat;
+    min-height: 871px;
+    position: relative
+}
+
+.b-shape1,
+.b-shape2 {
+    position: absolute;
+    pointer-events: none
+}
+
+.b-shape1 {
+    bottom: 1px;
+    left: 0
+}
+
+.b-shape2 {
+    top: 70px;
+    right: 0
+}
+
+.inner-top-title-des {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 1
+}
+
+.inner-top-title-des h1 {
+    font-size: 72px;
+    line-height: 85px
+}
+
+.wiki-table-content-inner {
+    padding: 15px;
+    border-radius: 16px;
+    background: var(--background-bg-block);
+    gap: 30px
+}
+
+.table-content-head {
+    max-width: 320px;
+    position: relative
+}
+
+.table-content-head-inner {
+    border-radius: 8px;
+    background: var(--opacity-shade-white-white-100);
+    padding: 15px;
+    position: sticky;
+    top: 175px;
+}
+
+.table-content-head ul,
+.table-content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.table-content-bg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.table-content-section ul {
+    list-style: disc;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--white-scale-900)
+}
+
+.table-content-section ul li span {
+    color: var(--white-scale-900);
+    font-family: var(--bold)
+}
+
+.table-content-section ul li .h6-headline {
+    margin-bottom: 5px
+}
+
+.table-responsive {
+    overflow: auto
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px
+}
+
+.table td {
+    padding: 12px 15px;
+    border: 1px solid var(--white-scale-700);
+    vertical-align: top;
+    color: var(--white-scale-900)
+}
+
+.table td:first-child {
+    font-family: var(--bold)
+}
+
+@media (max-width: 1400px) {
+    .b-shape2 {
+        max-width: 300px
+    }
+
+    .b-shape1 {
+        max-width: 180px;
+        bottom: 0
+    }
+
+    .b-shape3,
+    .b-shape4,
+    .b-shape6,
+    .b-shape7 {
+        display: none
+    }
+}
+
+@media (max-width: 1306px) {
+    .b-shape2 {
+        max-width: 210px
+    }
+
+    .box-style ul {
+        grid-template-columns: repeat(auto-fill, minmax(335px, 1fr))
+    }
+
+    .inner-top-title-des h1 {
+        font-size: 55px;
+        line-height: 68px
+    }
+
+    .inner-top-title-des {
+        gap: 25px
+    }
+}
+
+@media (max-width: 1023px) {
+    .inner-top-title-section {
+        min-height: 580px
+    }
+
+    .b-shape1,
+    .b-shape2 {
+        display: none
+    }
+}
+
+@media (max-width: 767px) {
+    .inner-top-title-des h1 {
+        font-size: 36px;
+        line-height: normal
+    }
+
+    .pt-96 {
+        padding-top: 128px
+    }
+
+    .table-content-head {
+        max-width: 100%;
+        width: 100%
+    }
+}

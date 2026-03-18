@@ -1,0 +1,100 @@
+.light_theme,
+:root {
+    --primary-colors-orange: #FF9F0A;
+    --primary-colors-orange-dark: #EC8F00;
+    --primary-colors-green: #41C979;
+    --primary-colors-green-dark: #30B868;
+    --primary-colors-blue: #0A84FF;
+    --primary-colors-blue-dark: #0078F0;
+    --primary-colors-purple: #8569FF;
+    --primary-colors-purple-dark: #7353FF;
+    --primary-colors-pink: #D04479;
+    --primary-colors-pink-dark: #C9306A;
+    --fix-color-white: #FFFFFF;
+    --fix-color-black: #000000;
+    --logo-color-logo-color: #F99B1C
+}
+
+:root {
+    --white-scale-900: #FFFFFF;
+    --white-scale-800: #CCCCCC;
+    --white-scale-700: #A6A6A6;
+    --white-scale-600: #8C8C8C;
+    --white-scale-500: #737373;
+    --white-scale-400: #595959;
+    --white-scale-300: #404040;
+    --white-scale-200: #262626;
+    --white-scale-100: #121212;
+    --white-scale-50: #0D0D0D;
+    --background-bg-body: #000000;
+    --background-bg-block: #131313;
+    --black-scale-900: #1D1B1B;
+    --black-scale-800: #1C1B1B;
+    --black-scale-700: #313131;
+    --black-scale-600: #7E7D7D;
+    --black-scale-500: #959494;
+    --black-scale-400: #ADACAC;
+    --black-scale-300: #C4C3C3;
+    --black-scale-200: #DCDCDC;
+    --black-scale-100: #EEEEEE;
+    --black-scale-50: #F3F3F3;
+    --logo-color-logo-white: #FFFFFF;
+    --mix-color-mix-gry-mix-0: #00000000;
+    --mix-color-mix-gry-mix-100: #000000;
+    --mix-color-mix-white-mix-0: #FFFFFF00;
+    --mix-color-mix-white-mix-100: #FFFFFF;
+    --opacity-shade-white-white-100: #FFFFFF0D;
+    --opacity-shade-white-white-200: #FFFFFF1A;
+    --opacity-shade-white-white-300: #FFFFFF4D;
+    --opacity-shade-white-white-400: #FFFFFF66;
+    --opacity-shade-white-white-500: #FFFFFF80;
+    --opacity-shade-black-black-100: #0000000D;
+    --opacity-shade-black-black-200: #0000001A;
+    --opacity-shade-black-black-300: #0000004D;
+    --opacity-shade-black-black-400: #00000066;
+    --opacity-shade-black-black-500: #00000080
+}
+
+.light_theme {
+    --white-scale-900: #141212;
+    --white-scale-800: #434141;
+    --white-scale-700: #666565;
+    --white-scale-600: #7E7D7D;
+    --white-scale-500: #959494;
+    --white-scale-400: #ADACAC;
+    --white-scale-300: #C4C3C3;
+    --white-scale-200: #DCDCDC;
+    --white-scale-100: #EEEEEE;
+    --white-scale-50: #F3F3F3;
+    --background-bg-body: #FFFFFF;
+    --background-bg-block: #F6F6F6;
+    --black-scale-900: #FFFFFF;
+    --black-scale-800: #F0F0F0;
+    --black-scale-700: #A6A6A6;
+    --black-scale-600: #8C8C8C;
+    --black-scale-500: #737373;
+    --black-scale-400: #595959;
+    --black-scale-300: #404040;
+    --black-scale-200: #262626;
+    --black-scale-100: #121212;
+    --black-scale-50: #0D0D0D;
+    --logo-color-logo-white: #000000;
+    --mix-color-mix-gry-mix-0: #FFFFFF00;
+    --mix-color-mix-gry-mix-100: #FFFFFF;
+    --mix-color-mix-white-mix-0: #00000000;
+    --mix-color-mix-white-mix-100: #000000;
+    --opacity-shade-white-white-100: #0000000D;
+    --opacity-shade-white-white-200: #0000001A;
+    --opacity-shade-white-white-300: #0000004D;
+    --opacity-shade-white-white-400: #00000066;
+    --opacity-shade-white-white-500: #00000080;
+    --opacity-shade-black-black-100: #FFFFFF0D;
+    --opacity-shade-black-black-200: #FFFFFF1A;
+    --opacity-shade-black-black-300: #FFFFFF4D;
+    --opacity-shade-black-black-400: #FFFFFF66;
+    --opacity-shade-black-black-500: #FFFFFF80
+}
+
+.fix-color-white {
+    color: var(--fix-color-white) !important
+}
